@@ -16,10 +16,10 @@
           <a class="nav-link" href="javascript:void(0)">Link</a>
         </li> -->
       </ul>
-      <form class="d-flex">
+      <!-- <form class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search">
         <button class="btn btn-primary" type="button">Search</button>
-      </form>
+      </form> -->
     </div>
   </div>
 </nav>
