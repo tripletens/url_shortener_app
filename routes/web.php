@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\UrlController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +19,10 @@ use App\Http\Controllers\LandingController;
 // });
 
 Route::get('/', [LandingController::class, 'index']);
+
+Route::POST('/create-short-url', [UrlController::class, 'create_url'])->name('create_short_url');
+
+Route::get('/{code}', [UrlController::class, 'view_site'])->name('view_site');
 
 Auth::routes();
 
